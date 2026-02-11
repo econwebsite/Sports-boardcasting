@@ -1,0 +1,9 @@
+
+{
+  "name": "e-con Sports Imaging Systems",
+  "description": "High-fidelity recreation of a sports imaging platform website featuring core solutions, technical advantages, and application highlights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

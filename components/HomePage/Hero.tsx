@@ -1,0 +1,58 @@
+
+import React from 'react';
+import Modelbutton from '../ButtonComp/Modelbutton';
+const Hero = () => {
+  return (
+    <div className="hero-section">
+      {/* Background Image */}
+      <div
+        className="hero-bg"
+        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2000&auto=format&fit=crop')` }}
+      >
+        <div className="hero-overlay" />
+      </div>
+
+      <div className="position-relative max-w-7xl mx-auto px-3 px-sm-3 px-lg-4 text-white w-100">
+        <div className="max-w-3xl">
+          <h1 className="hero-title">
+            Imaging Platforms for Sports Streaming, Analysis, and Training
+          </h1>
+          <p className="hero-subtitle max-w-xl">
+            Camera modules and Ethernet cameras designed for automated sports systems and AI-driven workflows.
+          </p>
+          <div className="d-flex flex-column flex-sm-row gap-3">
+            <Modelbutton
+              className="productIntraButtonEnd"
+              text="Explore Sports Solutions"
+              docName="e-con-Densicam-technical-documents.zip"
+              title="Sports Brochure"
+              productName="ProductDocument"
+              backgroundColor="#00aeef"
+              animationColor="#69ba2f"
+              hoverColor="#344ea1"
+            />
+            <Modelbutton
+              className="productIntraButtonEnd"
+              text="Contact Us"
+              backgroundColor="#fff"
+              type="contact"
+              textColor="#000"
+              animationColor="#00aeef"
+              hoverColor="#344ea1"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Camera Rig Overlay */}
+      <div className="d-none d-xl-block hero-camera-overlay">
+        <img
+          src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800&auto=format&fit=crop"
+          alt="Professional Camera"
+          className="w-100"
+        />
+      </div>
+    </div>
+  );
+};
+export { Hero };

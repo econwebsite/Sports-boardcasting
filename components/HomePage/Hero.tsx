@@ -15,10 +15,10 @@ const Hero = () => {
       <div className="position-relative max-w-7xl mx-auto px-3 px-sm-3 px-lg-4 text-white w-100">
         <div className="max-w-3xl">
           <h1 className="hero-title">
-            Imaging Platforms for Sports Streaming, Analysis, and Training
+            High-Performance Vision Solutions for Sports Streaming, Analysis & Training
           </h1>
           <p className="hero-subtitle max-w-xl">
-            Camera modules and Ethernet cameras designed for automated sports systems and AI-driven workflows.
+            e-con Systems offers camera modules, including Ethernet cameras – perfect for automated sports systems with AI-driven workflows
           </p>
           <div className="d-flex flex-column flex-sm-row gap-3">
             <Modelbutton

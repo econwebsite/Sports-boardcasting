@@ -4,13 +4,13 @@ import { Resource } from '../../types';
 import Modelbutton from '../ButtonComp/Modelbutton';
 const resources: Resource[] = [
   {
-    title: 'Automated Sports Streaming Platform Case Study',
-    category: 'Sports Books',
+    title: 'Vision for Automated Sports Streaming ',
+    category: 'Case Study',
     image: 'https://images.unsplash.com/photo-1470468969717-61d5d54fd036?q=80&w=200&auto=format&fit=crop'
   },
   {
-    title: 'Choosing Cameras for Sports Broadcasting',
-    category: 'Market Trends',
+    title: 'How to Choose Cameras for Sports Broadcasting',
+    category: 'Blogs',
     image: 'https://images.unsplash.com/photo-1470468969717-61d5d54fd036?q=80&w=200&auto=format&fit=crop'
   }
 ];
@@ -53,9 +53,10 @@ export const Resources: React.FC = () => {
                 <div className="cta-overlay" />
               </div>
               <div className="position-relative max-w-md" style={{ zIndex: 10 }}>
-                <h3 className="fs-3 fw-bold mb-3">Build Your Sports Imaging System</h3>
+                <h3 className="fs-3 fw-bold mb-3">Give Extraordinary Vision To Your Sports Imaging System</h3>
                 <p className="text-blue-100 mb-4">
-                  Talk to us about cameras for sports streaming, analytics, and training performance capture.
+                  Need help selecting the right cameras for sports streaming, analytics, or training?
+
                 </p>
                 {/* <button className="cta-btn">
                   Talk to Us

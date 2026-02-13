@@ -5,20 +5,20 @@ import { SolutionCard } from '../../types';
 
 const solutions: SolutionCard[] = [
   {
-    title: 'Multi-Camera Sports Streaming Systems',
-    description: 'Panoramic and multi-angle camera platforms for automated sports systems.',
+    title: 'Build Your Own Multi-Camera Sports Imaging Solution',
+    description: 'Explore camera modules and hardware platforms to configure a complete automated sports imaging solution.',
     image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=800&auto=format&fit=crop',
     link: '#'
   },
   {
-    title: 'Ethernet Cameras for Sports Streaming & Analytics',
-    description: 'PoE cameras for fixed sports installations, and long-distance recording.',
+    title: 'Deployment-Ready Ethernet Cameras',
+    description: 'PoE cameras for reliable, fixed sports capture installations.',
     image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=800&auto=format&fit=crop',
     link: '#'
   },
   {
-    title: 'Golf Swing Analysis & Simulators',
-    description: 'High-speed cameras for swing capture and simulator systems.',
+    title: 'Global Shutter Cameras for High-Speed Motion Capture',
+    description: 'Our high-speed cameras empower golf swing capture systems and other simulators with reliable imaging.',
     image: 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=800&auto=format&fit=crop',
     link: '#'
   }
@@ -29,7 +29,7 @@ export const Solutions: React.FC = () => {
     <section className="section-padding bg-gray-50">
       <div className="max-w-7xl mx-auto px-3 px-sm-3 px-lg-4">
         <h2 className="fs-3 fw-bold text-center text-slate-800 mb-5">
-          Core Solutions for Sports Imaging Systems
+          Core Vision Solutions for Sports Imaging Systems enabling Automated Streaming and Performance Analytics.
         </h2>
 
         <div className="row g-4">

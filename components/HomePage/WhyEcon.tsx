@@ -9,27 +9,35 @@ interface Feature {
 
 const features: Feature[] = [
   {
-    title: "Camera Modules & Ethernet Cameras",
+    title: "Proven, field-tested camera modules and Ethernet cameras",
     icon: <Camera className="text-brand" size={32} />
   },
   {
-    title: "Multi-Camera Synchronization & Stitching Support",
+    title: "Accurate multi-camera synchronization with 180° panoramic stitching support",
     icon: <Layers className="text-brand" size={32} />
   },
   {
-    title: <span>ISP tuning for <br /><span className="text-gray-400 fw-normal">fast motion and low lighting</span></span>,
+    title: "Broadcast-grade image quality with ISP tuning flexibility.",
     icon: <Target className="text-brand" size={32} />
   },
   {
-    title: "Optics & Form-Factor Customization",
+    title: "Optics customization to meet sport-specific imaging requirements.",
     icon: <Settings className="text-brand" size={32} />
   },
   {
-    title: <span>Platform Support <span className="text-gray-400 fw-normal">(NVIDIA, Qualcomm, Ambarella)</span></span>,
+    title: "Mechanical and enclosure design expertise for diverse deployment needs",
     icon: <Cpu className="text-brand" size={32} />
   },
   {
-    title: <span>Manufacturing, <br /><span className="text-gray-400 fw-normal">Calibration & Scale-Up Support</span></span>,
+    title: "In-house active alignment and precision calibration capabilities",
+    icon: <Factory className="text-brand" size={32} />
+  },
+   {
+    title: "Platform and carrier board development across NVIDIA, Qualcomm, and Ambarella",
+    icon: <Factory className="text-brand" size={32} />
+  },
+  {
+    title: "Strong manufacturing ecosystem supporting reliable volume production",
     icon: <Factory className="text-brand" size={32} />
   },
 ];
@@ -39,7 +47,7 @@ export const WhyEcon: React.FC = () => {
     <section className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-3 px-sm-3 px-lg-4">
         <h2 className="fs-3 fw-bold text-center text-slate-800 mb-5">
-          Why e-con for Sports Imaging Systems
+          Why e-con Systems for Sports Imaging Systems
         </h2>
 
         <div className="row g-3">

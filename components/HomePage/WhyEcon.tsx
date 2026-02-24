@@ -1,44 +1,43 @@
 
 import React from 'react';
-import { Camera, Layers, Target, Cpu, Settings, Factory } from 'lucide-react';
 
 interface Feature {
   title: string | React.ReactNode;
-  icon: React.ReactNode;
+  icon: string;
 }
 
 const features: Feature[] = [
   {
     title: "Proven, field-tested camera modules and Ethernet cameras",
-    icon: <Camera className="text-brand" size={32} />
+    icon: "/images/why-econ/camera.svg" 
   },
   {
     title: "Accurate multi-camera synchronization with 180° panoramic stitching support",
-    icon: <Layers className="text-brand" size={32} />
+    icon: "/images/why-econ/multi-camera.svg"
   },
   {
     title: "Broadcast-grade image quality with ISP tuning flexibility.",
-    icon: <Target className="text-brand" size={32} />
+    icon: "/images/why-econ/broadcast-grade.svg"
   },
   {
     title: "Optics customization to meet sport-specific imaging requirements.",
-    icon: <Settings className="text-brand" size={32} />
+    icon: "/images/why-econ/optics.svg"
   },
   {
     title: "Mechanical and enclosure design expertise for diverse deployment needs",
-    icon: <Cpu className="text-brand" size={32} />
+    icon: "/images/why-econ/enclosure-design.svg"
   },
   {
     title: "In-house active alignment and precision calibration capabilities",
-    icon: <Factory className="text-brand" size={32} />
+    icon: "/images/why-econ/calibration.svg"
   },
    {
     title: "Platform and carrier board development across NVIDIA, Qualcomm, and Ambarella",
-    icon: <Factory className="text-brand" size={32} />
+    icon: "/images/why-econ/platform.svg"
   },
   {
     title: "Strong manufacturing ecosystem supporting reliable volume production",
-    icon: <Factory className="text-brand" size={32} />
+    icon: "/images/why-econ/factory.svg"
   },
 ];
 
@@ -55,7 +54,7 @@ export const WhyEcon: React.FC = () => {
             <div key={idx} className="col-12 col-md-6 col-lg-4">
               <div className="feature-card h-100">
                 <div className="feature-icon">
-                  {feature.icon}
+                  <img src={feature.icon} alt="feature icon" style={{ width: '40px', height: '40px' }} />
                 </div>
                 <h3 className="mb-0 fw-bold text-slate-700 leading-snug" style={{ fontSize: '1rem' }}>
                   {feature.title}

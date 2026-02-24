@@ -5,19 +5,19 @@ import { Application } from '../../types';
 const apps: Application[] = [
   {
     title: 'Automated Soccer Match Streaming',
-    image: 'https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=800&auto=format&fit=crop'
+    image: '/images/appilications/automated-soccer-streaming.jpg'
   },
   {
     title: 'Training and Performance Analysis',
-    image: 'https://images.unsplash.com/photo-1543326727-cf6c39e8f84c?q=80&w=800&auto=format&fit=crop'
+    image: '/images/appilications/training-performance-analysis.jpg'
   },
   {
     title: 'Fixed Compact deployment for racquet sports',
-    image: 'https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=800&auto=format&fit=crop'
+    image: '/images/appilications/fixed-compact-deployment.jpg'
   },
   {
     title: 'Automated PTZ for Rugby and Baseball',
-    image: 'https://images.unsplash.com/photo-1504450758481-7338eba7524a?q=80&w=800&auto=format&fit=crop'
+    image: '/images/appilications/automated-ptz-rugby-baseball.jpg'
   }
 ];
 

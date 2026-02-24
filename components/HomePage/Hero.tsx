@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Background Image */}
       <div
         className="hero-bg"
-        style={{ backgroundImage: `url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2000&auto=format&fit=crop')` }}
+        style={{ backgroundImage: `url('/images/sports-boardcasting-banner-en.jpg')` }}
       >
         <div className="hero-overlay" />
       </div>
@@ -45,13 +45,13 @@ const Hero = () => {
       </div>
 
       {/* Camera Rig Overlay */}
-      <div className="d-none d-xl-block hero-camera-overlay">
+      {/* <div className="d-none d-xl-block hero-camera-overlay">
         <img
           src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=800&auto=format&fit=crop"
           alt="Professional Camera"
           className="w-100"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

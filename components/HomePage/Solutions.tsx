@@ -7,19 +7,19 @@ const solutions: SolutionCard[] = [
   {
     title: 'Build Your Own Multi-Camera Sports Imaging Solution',
     description: 'Explore camera modules and hardware platforms to configure a complete automated sports imaging solution.',
-    image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=800&auto=format&fit=crop',
+    image: '/images/solution/multi-camera-sports-imaging.jpg',
     link: '#'
   },
   {
     title: 'Deployment-Ready Ethernet Cameras',
     description: 'PoE cameras for reliable, fixed sports capture installations.',
-    image: 'https://images.unsplash.com/photo-1522778119026-d647f0596c20?q=80&w=800&auto=format&fit=crop',
+    image: '/images/solution/deployment-ready-ethernet-cameras.jpg',
     link: '#'
   },
   {
     title: 'Global Shutter Cameras for High-Speed Motion Capture',
     description: 'Our high-speed cameras empower golf swing capture systems and other simulators with reliable imaging.',
-    image: 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?q=80&w=800&auto=format&fit=crop',
+    image: '/images/solution/global-shutter-cameras.jpg',
     link: '#'
   }
 ];

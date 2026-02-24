@@ -7,9 +7,13 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-3 px-sm-3 px-lg-4">
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
           <div>
-            <span className="fs-4 fw-bold tracking-tight text-white">
-              e<span className="text-brand">.</span>con
-            </span>
+            <a href="/">
+              <img
+                src="/images/footerlogo-1.svg"
+                alt="Company Logo"
+                className="navbar-logo footer-logofilter"
+              />
+            </a>
             <p className="mt-2 small max-w-xs">
               World leader in camera modules and embedded vision solutions.
             </p>

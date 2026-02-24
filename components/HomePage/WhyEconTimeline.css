@@ -1,0 +1,242 @@
+/* ===============================
+   WhyEcon Timeline Section
+=================================*/
+
+.whyEconTimeline-section {
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.whyEconTimeline-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whyEconTimeline-heading {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: #1e293b;
+}
+
+/* ===============================
+   Timeline Layout
+=================================*/
+
+.whyEconTimeline-wrapper {
+  position: relative;
+}
+
+.whyEconTimeline-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background: #9cb9dc;
+  transform: translateX(-50%);
+}
+
+.whyEconTimeline-row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+/* Dot */
+.whyEconTimeline-dot {
+   position: absolute;
+  left: 50%;
+  top: 30px;
+  width: 14px;
+  height: 14px;
+  background: #1e50a0;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Content wrapper */
+.whyEconTimeline-content {
+  width: 50%;
+  padding: 0 40px;
+}
+
+/* Left & Right Alignment */
+.whyEconTimeline-left .whyEconTimeline-content {
+  text-align: right;
+}
+
+.whyEconTimeline-right .whyEconTimeline-content {
+  margin-left: auto;
+  text-align: left;
+}
+
+/* ===============================
+   Card Design
+=================================*/
+
+.whyEconTimeline-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  border: 1px solid #9cb9dc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  max-width: 520px;
+  transition: all 0.3s ease;
+}
+
+.whyEconTimeline-card:hover {
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.whyEconTimeline-card p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #334155;
+  line-height: 1.5;
+  text-align:left;
+}
+
+/* Icon circle */
+.whyEconTimeline-icon {
+  width: 50px;
+  height: 50px;
+  /* background: #ffffff; */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05); */
+  flex-shrink: 0;
+}
+
+.whyEconTimeline-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=================================*/
+
+/* Large Desktop */
+@media (min-width: 1400px) {
+  .whyEconTimeline-card {
+    max-width: 600px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .whyEconTimeline-content {
+    padding: 0 20px;
+  }
+
+  .whyEconTimeline-card {
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .whyEconTimeline-line {
+    left: 20px;
+  }
+
+  .whyEconTimeline-row {
+    flex-direction: row;
+  }
+
+  .whyEconTimeline-content {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+    text-align: left !important;
+  }
+
+  .whyEconTimeline-dot {
+    left: 20px;
+    transform: none;
+  }
+  .whyEconTimeline-connector {
+    left: 20px;
+    width: 30px;
+  }
+   .whyEconTimeline-left .whyEconTimeline-connector,
+  .whyEconTimeline-right .whyEconTimeline-connector {
+    right: auto;
+  }
+
+  .whyEconTimeline-card {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .whyEconTimeline-section {
+    padding: 60px 15px;
+  }
+
+  .whyEconTimeline-heading {
+    font-size: 24px;
+  }
+
+  .whyEconTimeline-card {
+    padding: 16px;
+    gap: 15px;
+  }
+
+  .whyEconTimeline-card p {
+    font-size: 14px;
+  }
+
+  .whyEconTimeline-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .whyEconTimeline-icon img {
+    width: 20px;
+    height: 20px;
+  }
+}
+/* ===============================
+   Horizontal Connector Line
+=================================*/
+
+.whyEconTimeline-connector {
+  position: absolute;
+  top: 37px; /* aligns with dot center */
+  width: 70px;
+  height: 2px;
+  background:#9cb9dc;;
+  z-index: 1;
+}
+
+/* LEFT SIDE CONNECTOR */
+.whyEconTimeline-left .whyEconTimeline-connector {
+  right: 50%;
+}
+
+/* RIGHT SIDE CONNECTOR */
+.whyEconTimeline-right .whyEconTimeline-connector {
+  left: 50%;
+}
+
+/* Adjust card spacing so connector visually touches */
+.whyEconTimeline-left .whyEconTimeline-content {
+  padding-right: 70px;
+}
+
+.whyEconTimeline-right .whyEconTimeline-content {
+  padding-left: 70px;
+}

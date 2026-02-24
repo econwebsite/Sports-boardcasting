@@ -175,6 +175,28 @@ body {
     background-color: #f9fafb;
 }
 
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  margin: 5px;
+  cursor: pointer;
+}
+.footer-logofilter {
+  filter: brightness(0) invert(1);
+}
+@media (min-width: 768px) {
+  .navbar-logo {
+    height: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-logo {
+    height: 80px;
+  }
+}
+
 /* Mobile Nav */
 .mobile-nav {
     background-color: #fff;

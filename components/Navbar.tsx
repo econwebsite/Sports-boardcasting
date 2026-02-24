@@ -5,7 +5,7 @@ import { NavItem } from '../types';
 import Modelbutton from './ButtonComp/Modelbutton';
 
 const navItems: NavItem[] = [
-  { label: 'Sports', href: '#' },
+  { label: 'Solutions', href: '#' },
   { label: 'Resources', href: '#' },
   { label: 'Company', href: '#' },
 ];
@@ -19,9 +19,13 @@ export const Navbar: React.FC = () => {
         <div className="d-flex justify-content-between align-items-center" style={{ height: '4rem' }}>
           {/* Logo */}
           <div className="d-flex align-items-center">
-            <span className="fs-4 fw-bold tracking-tight text-brand">
-              e<span className="text-gray-400">.</span>con
-            </span>
+            <a href="/">
+              <img
+                src="/images/footerlogo-1.svg"
+                alt="Company Logo"
+                className="navbar-logo"
+              />
+            </a>
           </div>
 
           {/* Desktop Nav */}

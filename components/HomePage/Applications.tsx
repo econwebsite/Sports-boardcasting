@@ -17,7 +17,7 @@ const apps: Application[] = [
   },
   {
     title: 'Automated PTZ for Rugby and Baseball',
-    image: '/images/appilications/automated-ptz-rugby-baseball.jpg'
+    image: '/images/solution/global-shutter-cameras.jpg'
   }
 ];
 

@@ -4,6 +4,7 @@ import { Solutions } from './Solutions';
 import { WhyEcon } from './WhyEcon';
 import { Applications } from './Applications';
 import { Resources } from './Resources';
+import RelatedResources from './RelatedResources';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Solutions />
             <WhyEcon />
             <Applications />
+            <RelatedResources />
             <Resources />
         </div>
     );

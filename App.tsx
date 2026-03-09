@@ -2,6 +2,7 @@
 import React from 'react';
 import { Navbar } from './components/Navbar';
 import Home from './components/HomePage/Home';
+import MultiCamera from './components/Solutions/Multicamera/MultiCamera';
 import { Footer } from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -15,7 +16,7 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-
+            <Route path="/multicamera" element={<MultiCamera />} />
           </Routes>
 
           <Footer />

@@ -19,32 +19,12 @@ export const Resources: React.FC = () => {
   return (
     <section className="section-padding bg-white">
       <div className="max-w-7xl mx-auto px-3 px-sm-3 px-lg-4">
-        <h2 className="fs-3 fw-bold text-slate-800 mb-5">Sports Resources</h2>
+        
 
         <div className="row g-5">
-          {/* Resource List */}
-          <div className="col-12 col-lg-5">
-            <div className="d-flex flex-column gap-4">
-              {resources.map((res, idx) => (
-                <div key={idx} className="resource-item">
-                  <div className="resource-thumb">
-                    <img src={res.image} alt={res.title} />
-                  </div>
-                  <div>
-                    <h4 className="resource-title">
-                      {res.title}
-                    </h4>
-                    <p className="resource-category">
-                      {res.category}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
+          
           {/* CTA Box */}
-          <div className="col-12 col-lg-7">
+          <div className="col-12 col-lg-12">
             <div className="cta-box">
               <div
                 className="cta-bg"

@@ -8,7 +8,7 @@ const solutions: SolutionCard[] = [
     title: 'Build Your Own Multi-Camera Sports Imaging Solution',
     description: 'Explore camera modules and hardware platforms to configure a complete automated sports imaging solution.',
     image: '/images/solution/multi-camera-sports-imaging.jpg',
-    link: '#'
+    link: '/multicamera'
   },
   {
     title: 'Deployment-Ready Ethernet Cameras',

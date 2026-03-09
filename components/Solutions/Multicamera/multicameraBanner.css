@@ -1,0 +1,122 @@
+.multicamera-banner {
+  width: 100%;
+  height: 460px;
+
+  background-image: url("../../public/images/multicamera/multicamera-banner.jpg");
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.banner-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+}
+
+/* CONTENT */
+
+.banner-content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  color: white;
+  text-align: center;
+}
+
+/* TITLE */
+
+.banner-title {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 16px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+/* SUBTITLE */
+
+.banner-subtitle {
+  font-size: 18px;
+  margin-bottom: 28px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* BUTTON */
+
+.banner-btn {
+  padding: 12px 28px;
+  background: #2c58a5;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideUp 1s ease forwards;
+  animation-delay: 0.6s;
+
+  transition: background 0.3s ease;
+}
+
+.banner-btn:hover {
+  background: #1f3f7a;
+}
+
+/* ANIMATION */
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .banner-title {
+    font-size: 34px;
+  }
+
+  .banner-subtitle {
+    font-size: 16px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .multicamera-banner {
+    height: 380px;
+  }
+
+  .banner-content {
+    text-align: center;
+  }
+
+  .banner-title {
+    font-size: 26px;
+  }
+
+  .banner-subtitle {
+    font-size: 15px;
+  }
+
+}

@@ -63,7 +63,10 @@ body {
 .bg-gray-50 {
     background-color: #f9fafb;
 }
-
+.hero-section h1 {
+    margin: 10px 0px;
+    width: 98%;
+}
 /* --- Layout Utilities --- */
 .overflow-x-hidden {
     overflow-x: hidden;

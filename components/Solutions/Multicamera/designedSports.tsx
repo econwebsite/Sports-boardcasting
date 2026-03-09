@@ -12,7 +12,7 @@ const DesignedSports: React.FC = () => {
         "Multi-Camera Alignment and Mounting Design",
       ],
       image:
-        "../../public/images/multicamera/sports-optics.jpg",
+        "../../images/multicamera/sports-optics.jpg",
       reverse: false,
     },
     {
@@ -25,7 +25,7 @@ const DesignedSports: React.FC = () => {
         "Battery and Power Integration Support",
       ],
       image:
-        "../../public/images/multicamera/sports-mechanical.jpg",
+        "../../images/multicamera/sports-mechanical.jpg",
       reverse: true,
     },
     {
@@ -39,7 +39,7 @@ const DesignedSports: React.FC = () => {
         "Improves stitching accuracy and spatial alignment between cameras.",
       ],
       image:
-        "../../public/images/multicamera/sports-alignment.jpg",
+        "../../images/multicamera/sports-alignment.jpg",
       reverse: false,
     },
     {
@@ -50,7 +50,7 @@ const DesignedSports: React.FC = () => {
         "Carrier Board Design and Manufacturing",
       ],
       image:
-        "../../public/images/multicamera/sports-isp.jpg",
+        "../../images/multicamera/sports-isp.jpg",
       reverse: true,
       logos: true,
     },
@@ -75,15 +75,15 @@ const DesignedSports: React.FC = () => {
             {item.logos && (
               <div className="platform-logos">
                 <img
-                  src="../../public/images/multicamera/nvidia-logo.jpg"
+                  src="../../images/multicamera/nvidia-logo.jpg"
                   alt="Nvidia"
                 />
                 <img
-                  src="../../public/images/multicamera/ambarella-logo.jpg"
+                  src="../../images/multicamera/ambarella-logo.jpg"
                   alt="Ambarella"
                 />
                 <img
-                  src="../../public/images/multicamera/qualcomm-logo.jpg"
+                  src="../../images/multicamera/qualcomm-logo.jpg"
                   alt="Qualcomm"
                 />
               </div>

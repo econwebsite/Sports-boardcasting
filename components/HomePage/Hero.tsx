@@ -20,7 +20,7 @@ const Hero = () => {
           <p className="hero-subtitle max-w-xl">
             e-con Systems offers camera modules, including Ethernet cameras – perfect for automated sports systems with AI-driven workflows
           </p>
-          <div className="d-flex flex-column flex-sm-row gap-3">
+          <div className="d-flex flex-column flex-sm-row gap-3 mb-3">
             <Modelbutton
               className="productIntraButtonEnd"
               text="Explore Sports Solutions"

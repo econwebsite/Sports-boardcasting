@@ -1,3 +1,6 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* Bootstrap CSS */
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,7 +11,7 @@
 
 /* --- Base --- */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f9fafb;
     /* bg-gray-50 */
     color: #1e293b;
@@ -19,7 +22,9 @@ body {
 .text-brand {
     color: #2e51a2;
 }
-
+.card-body p{
+    min-height: 70px;
+}
 .bg-brand {
     background-color: #2e51a2;
 }
@@ -91,7 +96,9 @@ body {
 .max-w-md {
     max-width: 28rem;
 }
-
+.newanimation{
+    font-weight: 600 !important;
+}
 /* --- Tracking/Letter Spacing --- */
 .tracking-tight {
     letter-spacing: -0.025em;

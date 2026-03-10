@@ -11,7 +11,7 @@ const navItems: NavItem[] = [
 ];
 
 const solutionDropdown = [
-  { label: 'Multi-Camera', href: '/multicamera' },
+  { label: 'Multi-Camera Solutions', href: '/multicamera' },
   { label: 'Ethernet Cameras', href: '#' },
   { label: 'Global Shutter Cameras', href: '#' },
 ];

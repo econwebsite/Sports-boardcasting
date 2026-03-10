@@ -18,7 +18,7 @@ const Resources: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/images/golf-simulator/choosing-the-right-camera-setup-for-golf.jpg"
+                  src="https://www.e-consystems.com/images/golf-simulator/choosing-the-right-camera-setup-for-golf.jpg"
                   title="Choosing the Right Camera Setup for Golf Swing Analysis"
                   alt="blog"
                 />
@@ -64,7 +64,7 @@ const Resources: React.FC = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/images/golf-simulator/what-is-sports-analytics-how-is-embedded.jpg"
+                  src="https://www.e-consystems.com/images/golf-simulator/what-is-sports-analytics-how-is-embedded.jpg"
                   title="What is sports analytics? How is embedded vision reimagining it?"
                   alt="blog"
                 />
@@ -85,7 +85,7 @@ const Resources: React.FC = () => {
                   rel="noopener noreferrer"
                 >
                   <div className="hubpage-casestudy-sub-title">
-                    Embedded vision and sports analytics go hand-in-hand as the collected image...
+                    Embedded vision and sports analytics go hand-in-hand as the collected...
                   </div>
                 </a>
                 <a

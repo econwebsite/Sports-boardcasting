@@ -4,13 +4,13 @@ const caseStudies = [
   {
     title: 'Vision for Automated Sports Streaming',
     description: 'Explore how automated systems revolutionize sports broadcasting.',
-    image: 'https://images.unsplash.com/photo-1470468969717-61d5d54fd036?q=80&w=200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=200&auto=format&fit=crop',
     link: '#'
   },
   {
     title: 'AI in Sports Analytics',
     description: 'Case study on implementing AI for real-time sports analytics.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=200&auto=format&fit=crop',
     link: '#'
   }
 ];
@@ -19,7 +19,7 @@ const blogs = [
   {
     title: 'How to Choose Cameras for Sports Broadcasting',
     description: 'A guide to selecting the best cameras for high-quality sports streaming.',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=200&auto=format&fit=crop',
+    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=200&auto=format&fit=crop',
     link: '#'
   },
   {

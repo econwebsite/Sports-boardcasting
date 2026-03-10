@@ -1,7 +1,7 @@
 /* ====== Original styles combined and cleaned ====== */
 
 * {
-  font-family: 'Droid Sans', sans-serif;
+ font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,7 +25,7 @@ a {
 }
 
 .market-patient-care .m_main {
-  padding: 125px 5px 5px 5px;
+  /* padding: 125px 5px 5px 5px; */
   width: 100%;
   color: #4d4d4d;
   background-color: #fff;
@@ -94,7 +94,7 @@ a {
 
 .main-title {
   display: none;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 26px;
   letter-spacing: normal;
   color: #0073aa;
@@ -125,11 +125,11 @@ a {
 }
 
 .SolutionsList li a {
-  background-color: #3f4d85;
+  /* background-color: #3f4d85; */
   padding: 3px 14px 3px 3px;
   margin: 5px;
   border-radius: 6px;
-  color: #fff;
+  color: #126dcd;
 }
 
 .SolutionsList li a:hover {
@@ -507,7 +507,11 @@ a {
     height: 198px;
   }
 }
-
+.container-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 /* image container and points */
 .image-container {
   position: relative;
@@ -862,6 +866,7 @@ a {
   text-align: left;
   font-size: 14px;
   padding-left: 20px;
+  line-height: 30px;
 }
 
 .server_section .SolutionsList li::before {
@@ -1305,5 +1310,112 @@ a {
   #blink3 {
     top: -25px;
     left: 22%;
+  }
+}
+.product-carousel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-carousel-inner {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.product-carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 8px;
+}
+
+.product-carousel-indicators .indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-carousel-indicators .indicator.active {
+  background-color: #333;
+}
+/* Center container */
+.container-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Ensure golf-section is centered */
+.golf-section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Fix image box alignment */
+.img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Product carousel styles (already added above) */
+.product-carousel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-carousel-inner {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.product-carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 8px;
+}
+
+.product-carousel-indicators .indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-carousel-indicators .indicator.active {
+  background-color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-carousel-inner {
+    max-width: 200px;
   }
 }

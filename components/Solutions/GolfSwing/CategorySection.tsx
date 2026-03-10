@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { CategoryProps } from './types';
 
-const CategorySection: React.FC<CategoryProps> = ({
+interface CategorySectionProps extends CategoryProps {
+  imageAlign: 'left' | 'right';
+}
+
+const CategorySection: React.FC<CategorySectionProps> = ({
   id,
   title,
   description,
@@ -13,10 +17,12 @@ const CategorySection: React.FC<CategoryProps> = ({
   buyNowLink,
   contactLink,
   showContactOnly = false,
+  imageAlign,
 }) => {
   const [sliderIndex, setSliderIndex] = useState(0);
+  const [productIndex, setProductIndex] = useState(0);
 
-  // Auto-slide effect
+  // Auto-slide for main slider
   useEffect(() => {
     if (images.length <= 1) return;
     const interval = setInterval(() => {
@@ -25,15 +31,20 @@ const CategorySection: React.FC<CategoryProps> = ({
     return () => clearInterval(interval);
   }, [images.length]);
 
+  // Determine flex direction based on imageAlign
+  const flexDirectionClass = imageAlign === 'right'
+    ? 'flex-column flex-sm-row-reverse'
+    : 'flex-column flex-sm-row';
+
   return (
     <div
       id={id}
-      className="col-xl-11 col-lg-11 col-md-12 col-sm-12 text-justify d-flex justify-content-between flex-column flex-sm-row-reverse markets-sections flex-wrap golf-section"
+      className={`col-xl-11 col-lg-11 col-md-12 col-sm-12 text-justify d-flex ${flexDirectionClass} markets-sections flex-wrap golf-section mx-auto`}
     >
-      {/* Right side image slider */}
+      {/* Image side */}
       <div className="col-lg-5 col-md-12 col-sm-12 text-justify d-flex justify-content-center align-items-center golfimg-section">
         <div className="col-11 d-flex justify-content-center align-items-center content-section">
-          <div className="img-box img-right text-center">
+          <div className="img-box text-center w-100">
             <div className="slider">
               <div
                 className="slider-images"
@@ -66,7 +77,7 @@ const CategorySection: React.FC<CategoryProps> = ({
         </div>
       </div>
 
-      {/* Left side content */}
+      {/* Content side */}
       <div className="col-lg-7 col-md-12 col-sm-12 text-left golfcontent-section">
         <h5
           className="col-12 mb-2 ps-3 mt-3 head-deskview"
@@ -82,43 +93,35 @@ const CategorySection: React.FC<CategoryProps> = ({
         </p>
 
         <div className="col-sm-12 col-lg-12 p-1 d-lg-flex justify-content-center align-items-center server_section">
-          {/* Left small carousel */}
+          {/* Left: Product image carousel */}
           <div className="col-sm-12 col-lg-5 p-1 d-flex justify-content-center align-items-center">
-            <div className="img-box animate-slide-left">
-              <div id={`slider-${id}`} className="carousel slide">
-                <div className="carousel-indicators" style={{ top: '100%', bottom: 'unset' }}>
-                  {productImages.map((_, idx) => (
-                    <button
-                      key={idx}
-                      type="button"
-                      data-bs-target={`#slider-${id}`}
-                      data-bs-slide-to={idx}
-                      className={idx === 0 ? 'active' : ''}
-                      aria-label={`Slide ${idx + 1}`}
-                    ></button>
-                  ))}
+            <div className="img-box animate-slide-left w-100">
+              <div className="product-carousel">
+                <div className="product-carousel-inner">
+                  <img
+                    src={productImages[productIndex]}
+                    alt={`product ${productIndex + 1}`}
+                    className="product-carousel-image"
+                  />
                 </div>
-                <div className="carousel-inner col-12">
-                  {productImages.map((src, idx) => (
-                    <div key={idx} className={`carousel-item ${idx === 0 ? 'active' : ''}`}>
-                      <a href={productLinks[idx]} className="hubpage-slider">
-                        <img
-                          src={src}
-                          alt={`product ${idx + 1}`}
-                          className="d-block w-100"
-                          style={{ maxWidth: '250px', margin: '0 auto' }}
-                        />
-                      </a>
-                    </div>
-                  ))}
-                </div>
+                {productImages.length > 1 && (
+                  <div className="product-carousel-indicators">
+                    {productImages.map((_, idx) => (
+                      <button
+                        key={idx}
+                        className={`indicator ${idx === productIndex ? 'active' : ''}`}
+                        onClick={() => setProductIndex(idx)}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
 
-          {/* Right features and buttons */}
+          {/* Right: Features and buttons */}
           <div className="col-sm-12 col-lg-7 p-1 d-flex justify-content-center align-items-center">
-            <div className="detail-box animate-slide-left">
+            <div className="detail-box animate-slide-left w-100">
               <p>Features:</p>
               <ul className="SolutionsList">
                 {features.map((feat, idx) => (
@@ -134,7 +137,7 @@ const CategorySection: React.FC<CategoryProps> = ({
                         <p className="subtitle mediumSize">Download datasheet</p>
                         <div className="document-btn">
                           <a href={datasheetLink} id="Download-datasheet">
-                            <img src="/images/download-btn.png" alt="Download Document" />
+                            <img src="https://www.e-consystems.com/images/download-btn.png" alt="Download Document" />
                           </a>
                         </div>
                       </div>
@@ -148,7 +151,7 @@ const CategorySection: React.FC<CategoryProps> = ({
                         </p>
                         <div className="price-btn">
                           <a href={buyNowLink} id="Buynow-btn">
-                            <img src="/images/buynow-btn.png" alt="Buy Now" className="img-fluid" />
+                            <img src="https://www.e-consystems.com/images/buynow-btn.png" alt="Buy Now" className="img-fluid" />
                           </a>
                         </div>
                       </div>
@@ -162,7 +165,7 @@ const CategorySection: React.FC<CategoryProps> = ({
                         </p>
                         <div className="price-btn">
                           <a href={contactLink} className="contactus-product" style={{ cursor: 'pointer' }}>
-                            <img src="/images/contactus-btn.png" alt="Contact Us" className="img-fluid" />
+                            <img src="https://www.e-consystems.com/images/contactus-btn.png" alt="Contact Us" className="img-fluid" />
                           </a>
                         </div>
                       </div>
@@ -178,7 +181,7 @@ const CategorySection: React.FC<CategoryProps> = ({
                       </p>
                       <div className="price-btn">
                         <a href={contactLink} className="contactus-product" style={{ cursor: 'pointer' }}>
-                          <img src="/images/contactus-btn.png" alt="Contact Us" />
+                          <img src="https://www.e-consystems.com/images/contactus-btn.png" alt="Contact Us" />
                         </a>
                       </div>
                     </div>

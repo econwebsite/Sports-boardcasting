@@ -25,9 +25,11 @@ const GolfSwing: React.FC = () => {
   return (
     <div className="maincontainer market-patient-care">
       <div className="m_main">
-        <Banner/>
-        <BigImageWithCategories />
-        <Resources />
+        <Banner />
+        <div className="container-wrapper">
+          <BigImageWithCategories />
+          <Resources />
+        </div>
       </div>
     </div>
   );

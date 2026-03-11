@@ -50,14 +50,12 @@ a {
 
 @media only screen and (min-width: 200px) and (max-width: 500px) {
   .market-patient-care .m_main {
-    padding: 67px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 }
 
 @media (max-width: 600px) {
-  .banner-main {
-    padding: 10px;
-  }
+ 
   .banner img {
     max-width: 100%;
     height: auto;
@@ -65,9 +63,7 @@ a {
 }
 
 @media (max-width: 768px) {
-  .banner-main {
-    padding: 15px;
-  }
+  
   .banner img {
     max-width: 100%;
     height: auto;
@@ -75,9 +71,7 @@ a {
 }
 
 @media (max-width: 1024px) {
-  .banner-main {
-    padding: 20px;
-  }
+  
   .banner img {
     max-width: 100%;
     height: auto;
@@ -235,7 +229,7 @@ a {
 
 @media only screen and (min-width:200px) and (max-width:500px) {
   .market-patient-care .m_main {
-    padding: 142px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
   }
 }
 
@@ -733,7 +727,7 @@ a {
 
 .golf-section {
   width: 96%;
-  background: #f2f5f9;
+  background: #f6f8fab3;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   display: flex;

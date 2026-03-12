@@ -4,6 +4,9 @@ import { Navbar } from './components/Navbar';
 import Home from './components/HomePage/Home';
 import MultiCamera from './components/Solutions/Multicamera/MultiCamera';
 import GolfSwing from './components/Solutions/GolfSwing/GolfSwing';
+import Blogs from './components/resources/blogs/blogs';
+import CaseStudies from './components/resources/casestudies/caseStudies';
+import Videos from './components/resources/videos/videos';
 import { Footer } from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -19,6 +22,9 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/multicamera" element={<MultiCamera />} />
             <Route path="/golfswing" element={<GolfSwing />} />
+            <Route path="/resources/blogs" element={<Blogs />} />
+<Route path="/resources/case-studies" element={<CaseStudies />} />
+<Route path="/resources/videos" element={<Videos />} />
           </Routes>
 
           <Footer />

@@ -56,7 +56,12 @@
   height: auto;
   margin-bottom: 15px;
 }
-
+.sensor-content-inside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+      min-height: 250px;
+}
 .sensor-content h4 {
   font-size: 14px;
   font-weight: 700;
@@ -91,4 +96,44 @@
   .multi-heading {
     font-size: 22px;
   }
+}
+.sensor-cta {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* Know More */
+
+.knowmore-btn {
+  padding: 8px 16px;
+  background: #2c58a5;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.knowmore-btn:hover {
+  background: #1e3f7a;
+}
+
+/* Contact */
+
+.contact-btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1px solid #2e874a;
+  color: #2c58a5;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  color: #fff !important;
 }

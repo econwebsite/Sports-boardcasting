@@ -20,7 +20,7 @@ const solutions: SolutionCard[] = [
     title: 'Global Shutter Cameras for High-Speed Motion Capture',
     description: 'Our high-speed cameras empower golf swing capture systems and other simulators with reliable imaging.',
     image: '/images/appilications/automated-ptz-rugby-baseball.jpg',
-    link: '#'
+    link: '/golfswing'
   }
 ];
 

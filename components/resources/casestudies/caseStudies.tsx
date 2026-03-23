@@ -4,37 +4,37 @@ import './caseStudies.css';
 // Sample case study data
 const caseStudies = [
   {
-    title: 'Vision for Automated Sports Streaming',
-    description: 'Explore how automated systems revolutionized sports broadcasting for a major league.',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800&auto=format&fit=crop',
+    title: 'Automated Sports Broadcasting & Analytics',
+    description: 'e-con Systems® developed a 180° camera solution using three MIPI cameras integrated with a NVIDIA® Jetson™ platform.',
+    image: 'https://www.e-consystems.com/images/markets/case-study/sports-systems/sports-analytics-benefits-en.jpg',
     industry: 'Broadcasting',
-    link: '#',
+    link: 'https://www.e-consystems.com/resources/case-studies/oem-180-degree-camera-solution.asp',
     featured: true
   },
   {
-    title: 'AI in Sports Analytics',
-    description: 'Implementing real-time AI analytics for player performance and game strategy.',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800&auto=format&fit=crop',
+    title: 'Reinventing real-time sports broadcasting experiences',
+    description: 'The client wanted to increase their viewer base by live-broadcasting soccer matches (or on-demand or recorded or highlight reels) without the need for a camera operator.',
+    image: 'https://www.e-consystems.com/images/markets/case-study/sports-and-education/Sports_Featured-image.jpg',
     industry: 'Analytics',
-    link: '#',
+    link: 'https://www.e-consystems.com/resources/case-studies/sports-broadcasting-case-study.asp',
     featured: false
   },
-  {
-    title: 'Cloud-Based Replay Systems',
-    description: 'How cloud infrastructure enabled instant replays and highlights for remote production.',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800&auto=format&fit=crop',
-    industry: 'Cloud',
-    link: '#',
-    featured: false
-  },
-  {
-    title: 'Fan Engagement via Mobile Apps',
-    description: 'Case study on building a second-screen experience for live sports fans.',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800&auto=format&fit=crop',
-    industry: 'Mobile',
-    link: '#',
-    featured: false
-  }
+  // {
+  //   title: 'Cloud-Based Replay Systems',
+  //   description: 'How cloud infrastructure enabled instant replays and highlights for remote production.',
+  //   image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800&auto=format&fit=crop',
+  //   industry: 'Cloud',
+  //   link: '#',
+  //   featured: false
+  // },
+  // {
+  //   title: 'Fan Engagement via Mobile Apps',
+  //   description: 'Case study on building a second-screen experience for live sports fans.',
+  //   image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=800&auto=format&fit=crop',
+  //   industry: 'Mobile',
+  //   link: '#',
+  //   featured: false
+  // }
 ];
 
 const CaseStudies: React.FC = () => {
@@ -65,7 +65,7 @@ const CaseStudies: React.FC = () => {
                 <h2 className="featured-study__title">{featured.title}</h2>
                 <p className="featured-study__description">{featured.description}</p>
                 <div className="featured-study__meta">
-                  <span className="featured-study__industry">{featured.industry}</span>
+                  {/* <span className="featured-study__industry">{featured.industry}</span> */}
                   <a href={featured.link} className="featured-study__link">View Case Study →</a>
                 </div>
               </div>
@@ -83,7 +83,7 @@ const CaseStudies: React.FC = () => {
                   <img src={study.image} alt={study.title} className="case-card__image" />
                 </div>
                 <div className="case-card__content">
-                  <span className="case-card__industry">{study.industry}</span>
+                  {/* <span className="case-card__industry">{study.industry}</span> */}
                   <h4 className="case-card__title">{study.title}</h4>
                   <p className="case-card__description">{study.description}</p>
                   <a href={study.link} className="case-card__link">Read Case Study →</a>

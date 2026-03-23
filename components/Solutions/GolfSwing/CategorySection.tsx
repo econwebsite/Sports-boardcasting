@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Modelbutton from '../../ButtonComp/Modelbutton';
 import { CategoryProps } from './types';
 
 interface CategorySectionProps extends CategoryProps {
@@ -163,10 +164,16 @@ const CategorySection: React.FC<CategorySectionProps> = ({
                         <p className="subtitle mediumSize" style={{ fontWeight: 'bold' }}>
                           {showContactOnly ? 'To know more' : 'For different lens options'}
                         </p>
-                        <div className="price-btn">
-                          <a href={contactLink} className="contactus-product" style={{ cursor: 'pointer' }}>
-                            <img src="https://www.e-consystems.com/images/contactus-btn.png" alt="Contact Us" className="img-fluid" />
-                          </a>
+                        <div className="price-btn" >
+                          <Modelbutton
+                            className="contactus-product"
+                            text="Contact Us"
+                            backgroundColor="#2592c7"
+                            type="contact"
+                            textColor="#ffffff"
+                            animationColor="#108bb9"
+                            hoverColor="#344ea1"
+                          />
                         </div>
                       </div>
                     </div>
@@ -180,9 +187,15 @@ const CategorySection: React.FC<CategorySectionProps> = ({
                         To know more
                       </p>
                       <div className="price-btn">
-                        <a href={contactLink} className="contactus-product" style={{ cursor: 'pointer' }}>
-                          <img src="https://www.e-consystems.com/images/contactus-btn.png" alt="Contact Us" />
-                        </a>
+                        <Modelbutton
+                          className="contactus-product"
+                          text="Contact Us"
+                           backgroundColor="#2592c7"
+                            type="contact"
+                            textColor="#ffffff"
+                            animationColor="#108bb9"
+                            hoverColor="#344ea1"
+                        />
                       </div>
                     </div>
                   </div>

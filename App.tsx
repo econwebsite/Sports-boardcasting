@@ -7,6 +7,7 @@ import GolfSwing from './components/Solutions/GolfSwing/GolfSwing';
 import Blogs from './components/resources/blogs/blogs';
 import CaseStudies from './components/resources/casestudies/caseStudies';
 import Videos from './components/resources/videos/videos';
+import NotFound from './components/NotFound';
 import { Footer } from './components/Footer';
 import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -23,8 +24,9 @@ const App = () => {
             <Route path="/multicamera" element={<MultiCamera />} />
             <Route path="/golfswing" element={<GolfSwing />} />
             <Route path="/resources/blogs" element={<Blogs />} />
-<Route path="/resources/case-studies" element={<CaseStudies />} />
-<Route path="/resources/videos" element={<Videos />} />
+            <Route path="/resources/case-studies" element={<CaseStudies />} />
+            <Route path="/resources/videos" element={<Videos />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
 
           <Footer />

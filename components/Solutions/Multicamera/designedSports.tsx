@@ -6,14 +6,42 @@ const DesignedSports: React.FC = () => {
     {
       title: "Get Optics Designed for Sports Coverage",
       bullets: [
-        "OTS – High-quality lenses from trusted partners",
+        "Off-the-Shelf (OTS) and Custom High-Quality Lenses from Trusted Partners",
         "Application-Specific FOV Engineering",
         "High MTF and Centre to Corner Sharpness Validation",
-        "Multi-Camera Alignment and Mounting Design",
       ],
-      image:
-        "../../images/multicamera/sports-optics.jpg",
+      image: "../../images/multicamera/sports-optics.jpg",
       reverse: false,
+    },
+    {
+      title: "In-House Production-Level Optical Precision",
+      bullets: [
+        {
+          title: "Active Alignment:",
+          desc: "Minimizes camera-to-camera optical variation for consistent multi-camera output.",
+        },
+        {
+          title: "Focusing & Gluing Process:",
+          desc: "Locks the optimized focus position to ensure long-term optical stability.",
+        },
+        {
+          title: "Camera Calibration (Intrinsic & Extrinsic):",
+          desc: "Improves stitching accuracy and spatial alignment between cameras.",
+        },
+      ],
+      image: "../../images/multicamera/sports-alignment.jpg",
+      reverse: true,
+    },
+    {
+      title: "ISP & Platform Expertise",
+      bullets: [
+        "Processor-Aligned ISP Tuning",
+        "e-con's Proprietary onboard ISP for High-Dynamic Camera Modules",
+        "Carrier Board Design and Manufacturing",
+      ],
+      image: "../../images/multicamera/sports-isp.jpg",
+      reverse: false,
+      logos: true,
     },
     {
       title: "Form Factor & Mechanical Customization",
@@ -24,35 +52,8 @@ const DesignedSports: React.FC = () => {
         "Enclosure Design and Scalable Manufacturing",
         "Battery and Power Integration Support",
       ],
-      image:
-        "../../images/multicamera/sports-mechanical.jpg",
+      image: "../../images/multicamera/sports-mechanical.jpg",
       reverse: true,
-    },
-    {
-      title: "In-House Production-Level Optical Precision",
-      bullets: [
-        "Active Alignment",
-        "Minimizes camera-to-camera optical variation for consistent multi-camera output.",
-        "Focusing & Gluing Process",
-        "Locks the optimized focus position to ensure long-term optical stability.",
-        "Camera Calibration (Intrinsic & Extrinsic)",
-        "Improves stitching accuracy and spatial alignment between cameras.",
-      ],
-      image:
-        "../../images/multicamera/sports-alignment.jpg",
-      reverse: false,
-    },
-    {
-      title: "ISP & Platform Expertise",
-      bullets: [
-        "Processor-Aligned ISP Tuning",
-        "e-con's Proprietary onboard ISP for High-Dynamic Camera Modules",
-        "Carrier Board Design and Manufacturing",
-      ],
-      image:
-        "../../images/multicamera/sports-isp.jpg",
-      reverse: true,
-      logos: true,
     },
   ];
 
@@ -67,8 +68,17 @@ const DesignedSports: React.FC = () => {
             <h3>{item.title}</h3>
 
             <ul>
-              {item.bullets.map((bullet, i) => (
-                <li key={i}>{bullet}</li>
+              {item.bullets.map((bullet: any, i) => (
+                <li key={i}>
+                  {typeof bullet === "string" ? (
+                    bullet
+                  ) : (
+                    <>
+                      <strong>{bullet.title}</strong>
+                      <p>{bullet.desc}</p>
+                    </>
+                  )}
+                </li>
               ))}
             </ul>
 

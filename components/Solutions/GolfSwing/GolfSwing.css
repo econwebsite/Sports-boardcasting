@@ -326,7 +326,7 @@ a {
 .card {
   display: flex;
   width: 95%;
-  height: 170px;
+  height: 173px;
   color: #3498db;
   overflow: hidden;
   border-radius: 22px;
@@ -338,7 +338,6 @@ a {
 }
 
 .card img {
-  height: 100%;
   border-radius: 20px;
 }
 
@@ -1412,4 +1411,8 @@ a {
   .product-carousel-inner {
     max-width: 200px;
   }
+}
+
+.contactus-product {
+  padding: 5px 20px !important;
 }

@@ -9,30 +9,20 @@ const videos = [
     thumbnail: 'https://img.youtube.com/vi/ywqjrm73xQM/maxresdefault.jpg'
   },
   {
-    title: 'Behind the Scenes: Sports Broadcast',
-    videoId: 'ywqjrm73xQM',
-    thumbnail: 'https://img.youtube.com/vi/ywqjrm73xQM/maxresdefault.jpg'
+    title: 'Basketball-Tracking mit Haltungspunkten-Demo beeindruckt Publikum auf der VISION 2024',
+    videoId: 'o64V3XNeoVM',
+    thumbnail: 'https://img.youtube.com/vi/o64V3XNeoVM/maxresdefault.jpg'
   },
   {
-    title: 'Interview with a Sports Technologist',
-    videoId: 'ywqjrm73xQM',
-    thumbnail: 'https://img.youtube.com/vi/ywqjrm73xQM/maxresdefault.jpg'
+    title: 'Applications of AI Vision Boxes: AMRs, ITS, Surveillance & Industrial Automation',
+    videoId: 'Cms9Flf-nvI',
+    thumbnail: 'https://img.youtube.com/vi/Cms9Flf-nvI/maxresdefault.jpg'
   },
   {
-    title: 'Live Demo: Remote Production Setup',
-    videoId: 'ywqjrm73xQM',
-    thumbnail: 'https://img.youtube.com/vi/ywqjrm73xQM/maxresdefault.jpg'
+    title: 'Factors to consider: Integrating multi-camera solutions into sports broadcasting applications',
+    videoId: 'DOzBqWTzVz4',
+    thumbnail: 'https://img.youtube.com/vi/DOzBqWTzVz4/maxresdefault.jpg'
   },
-  {
-    title: 'The Evolution of Sports Cameras',
-    videoId: 'ywqjrm73xQM',
-    thumbnail: 'https://img.youtube.com/vi/ywqjrm73xQM/maxresdefault.jpg'
-  },
-  {
-    title: 'How to Stream a Stadium Event',
-    videoId: 'ywqjrm73xQM',
-    thumbnail: 'https://img.youtube.com/vi/ywqjrm73xQM/maxresdefault.jpg'
-  }
 ];
 
 const Videos: React.FC = () => {
@@ -52,7 +42,7 @@ const Videos: React.FC = () => {
         {/* Header */}
         <div className="text-center mb-5">
           <h1 className="display-4 fw-bold text-slate-800">Related Videos</h1>
-          <p className="lead text-muted">Watch our latest explainers, demos, and behind-the-scenes content</p>
+          {/* <p className="lead text-muted">Watch our latest explainers, demos, and behind-the-scenes content</p> */}
         </div>
 
         {/* Video Grid */}

@@ -32,8 +32,8 @@
 
 .featured-study__badge {
   display: inline-block;
-  background-color: #2563eb;
-  color: white;
+ background-color: #ccd3e3;
+    color: #999999;
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.25rem 1rem;

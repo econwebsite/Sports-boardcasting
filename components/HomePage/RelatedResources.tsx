@@ -2,31 +2,31 @@ import React from 'react';
 
 const caseStudies = [
   {
-    title: 'Vision for Automated Sports Streaming',
-    description: 'Explore how automated systems revolutionize sports broadcasting.',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=200&auto=format&fit=crop',
-    link: '#'
+    title: 'Automated Sports Broadcasting & Analytics',
+    description: 'e-con Systems® developed a 180° camera solution using three MIPI cameras integrated with a NVIDIA® Jetson™ platform.',
+    image: 'https://www.e-consystems.com/images/markets/case-study/sports-systems/sports-analytics-benefits-en.jpg',
+    link: 'https://www.e-consystems.com/resources/case-studies/oem-180-degree-camera-solution.asp'
   },
   {
-    title: 'AI in Sports Analytics',
-    description: 'Case study on implementing AI for real-time sports analytics.',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=200&auto=format&fit=crop',
-    link: '#'
+    title: 'Reinventing real-time sports broadcasting experiences',
+    description: 'The client wanted to increase their viewer base by live-broadcasting soccer matches (or on-demand or recorded or highlight reels) without the need for a camera operator.',
+    image: 'https://www.e-consystems.com/images/markets/case-study/sports-and-education/Sports_Featured-image.jpg',
+    link: 'https://www.e-consystems.com/resources/case-studies/sports-broadcasting-case-study.asp'
   }
 ];
 
 const blogs = [
   {
-    title: 'How to Choose Cameras for Sports Broadcasting',
-    description: 'A guide to selecting the best cameras for high-quality sports streaming.',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=200&auto=format&fit=crop',
-    link: '#'
+    title: 'How High-Resolution Cameras Help Maximize Soccer Broadcasting Efficiency',
+    description: 'The easy integration of high-resolution cameras is changing the game for soccer clubs of all sizes.',
+    image: 'https://www.e-consystems.com/blog/camera/wp-content/uploads/2023/12/How-High-Resolution-Cameras-Help-Maximize-Soccer-Broadcasting-Efficiency.png',
+    link: 'https://www.e-consystems.com/blog/camera/applications/how-high-resolution-cameras-help-maximize-soccer-broadcasting-efficiency/'
   },
   {
-    title: 'The Future of Sports Technology',
-    description: 'Insights into emerging technologies shaping the sports industry.',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=200&auto=format&fit=crop',
-    link: '#'
+    title: 'How multi-camera systems are used in sports broadcasting',
+    description: 'Multi-camera systems have changed sports broadcasting as they help capture various angles simultaneously, transition between camera feeds, provide replays, etc.',
+    image: 'https://www.e-consystems.com/blog/camera/wp-content/uploads/2023/07/How-multi-camera-systems-are-used-in-sports-broadcasting-960x640.jpg',
+    link: 'https://www.e-consystems.com/blog/camera/applications/how-multi-camera-systems-are-used-in-sports-broadcasting/'
   }
 ];
 
@@ -54,7 +54,7 @@ const RelatedResources: React.FC = () => {
                       <p className="resource-category">
                         Case Study
                       </p>
-                      <p className="text-muted small">{study.description}</p>
+                      {/* <p className="text-muted small">{study.description}</p> */}
                       <a href={study.link} className="text-primary fw-bold">Read More →</a>
                     </div>
                   </div>
@@ -62,11 +62,11 @@ const RelatedResources: React.FC = () => {
               </div>
             </div>
             <div className="col-12 col-lg-7">
-              <div className="card border-0 shadow-sm h-100">
-                <img src={caseStudies[0].image} className="card-img-top" alt={caseStudies[0].title} style={{ height: '250px', objectFit: 'cover' }} />
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">{caseStudies[0].title}</h5>
-                  <p className="card-text text-muted">{caseStudies[0].description}</p>
+              <div className="card border-0 shadow-sm" style={{ height: '250px' }}>
+                <img src={caseStudies[0].image} className="card-img-top" alt={caseStudies[0].title} style={{ height: '250px', objectFit: 'cover', borderRadius: '0px' }} />
+                <div className="card-body" >
+                  <h5 className="card-title fw-bold" style={{ color: '#000' }}>{caseStudies[0].title}</h5>
+                  {/* <p className="card-text text-muted">{caseStudies[0].description}</p> */}
                   <a href={caseStudies[0].link} className="text-primary fw-bold">Know More →</a>
                 </div>
               </div>
@@ -92,7 +92,7 @@ const RelatedResources: React.FC = () => {
                       <p className="resource-category">
                         Blog
                       </p>
-                      <p className="text-muted small">{blog.description}</p>
+                      {/* <p className="text-muted small">{blog.description}</p> */}
                       <a href={blog.link} className="text-primary fw-bold">Read More →</a>
                     </div>
                   </div>
@@ -100,11 +100,11 @@ const RelatedResources: React.FC = () => {
               </div>
             </div>
             <div className="col-12 col-lg-7">
-              <div className="card border-0 shadow-sm h-100">
-                <img src={blogs[0].image} className="card-img-top" alt={blogs[0].title} style={{ height: '250px', objectFit: 'cover' }} />
-                <div className="card-body">
-                  <h5 className="card-title fw-bold">{blogs[0].title}</h5>
-                  <p className="card-text text-muted">{blogs[0].description}</p>
+              <div className="card border-0 shadow-sm" style={{ height: '250px' }}>
+                <img src={blogs[0].image} className="card-img-top" alt={blogs[0].title} style={{ height: '250px', objectFit: 'cover', borderRadius: '0px'  }} />
+                <div className="card-body" style={{ height: '250px' }}>
+                  <h5 className="card-title fw-bold" style={{ color: '#000' }}>{blogs[0].title}</h5>
+                  {/* <p className="card-text text-muted">{blogs[0].description}</p> */}
                   <a href={blogs[0].link} className="text-primary fw-bold">Know More →</a>
                 </div>
               </div>

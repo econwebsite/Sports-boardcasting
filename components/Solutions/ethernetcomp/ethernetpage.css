@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ethernet-page {
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #0d1f3c;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+.ethernet-page ::-webkit-scrollbar {
+  width: 6px;
+}
+.ethernet-page ::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+.ethernet-page ::-webkit-scrollbar-thumb {
+  background: #1e6fff;
+  border-radius: 3px;
+}

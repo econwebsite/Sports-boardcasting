@@ -53,7 +53,7 @@ const InteractiveImage: React.FC<InteractiveImageProps> = ({ onPointClick, blink
 
       {/* Mobile Pixel Image (click to open overlay) */}
       <div id="pixelmob" className="pixel-mobile" onClick={() => setOverlayOpen(true)}>
-        <img src="/images/golf-simulator/golf-simulator-analysis-image-en.png" alt="Interactive Mobile" />
+        <img src="https://www.e-consystems.com/images/golf-simulator/golf-simulator-analysis-image-eng.jpg" alt="Interactive Mobile" />
       </div>
 
       {/* Overlay for mobile */}
@@ -61,7 +61,7 @@ const InteractiveImage: React.FC<InteractiveImageProps> = ({ onPointClick, blink
         <div id="overlay1" className="overlay" style={{ display: 'block' }}>
           <div className="overlay-content">
             <span className="close" onClick={() => setOverlayOpen(false)}>&times;</span>
-            <img src="/images/golf-simulator/golf-simulator-analysis-image-en.png" alt="Interactive Image" id="largeImage1" />
+            <img src="https://www.e-consystems.com/images/golf-simulator/golf-simulator-analysis-image-eng.jpg" alt="Interactive Image" id="largeImage1" />
           </div>
         </div>
       )}

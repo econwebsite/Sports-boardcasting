@@ -1,0 +1,154 @@
+.routecam {
+  background: #f4f7fb;
+  padding: 72px 40px;
+}
+
+.routecam__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.routecam__visual {
+  background: linear-gradient(135deg, #0d2240 0%, #1a3d6b 100%);
+  border-radius: 12px;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.routecam__visual::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 70% 60% at 40% 60%, rgba(63, 169, 255, 0.1), transparent);
+}
+
+.routecam__visual svg {
+  width: 140px;
+  height: 140px;
+  opacity: 0.75;
+  position: relative;
+}
+
+.routecam__eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1e6fff;
+  margin-bottom: 10px;
+}
+
+.routecam__title {
+  font-family: 'Barlow', sans-serif;
+  font-size: clamp(22px, 2.8vw, 32px);
+  font-weight: 800;
+  color: #0d1f3c;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+}
+
+.routecam__title span {
+  color: #2c58a5;
+}
+
+.routecam__desc {
+  font-size: 15px;
+  color: #4a5e7a;
+  line-height: 1.7;
+  margin: 0 0 28px;
+}
+
+.routecam__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.routecam__feat {
+  background: #ffffff;
+  border: 1px solid #e1e8f0;
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.routecam__feat-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(30, 111, 255, 0.1);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.routecam__feat-icon svg {
+  width: 16px;
+  height: 16px;
+  stroke: #1e6fff;
+  fill: none;
+}
+
+.routecam__feat-text {
+  font-size: 14.5px;
+  color: #0d1f3c;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.routecam__feat-detail {
+  font-size: 12px;
+  color: #7a8ea8;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.routecam__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #2c58a5;
+  color: #fff;
+  border: none;
+  padding: 13px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.routecam__cta:hover { background: #082b68; }
+
+@media (max-width: 900px) {
+  .routecam__container {
+    grid-template-columns: 1fr;
+  }
+
+  .routecam__visual {
+    max-width: 360px;
+  }
+
+  .routecam {
+    padding: 52px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .routecam__features {
+    grid-template-columns: 1fr;
+  }
+}

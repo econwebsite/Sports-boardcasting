@@ -36,7 +36,7 @@ const DesignedSports: React.FC = () => {
       title: "ISP & Platform Expertise",
       bullets: [
         "Processor-Aligned ISP Tuning",
-        "e-con's Proprietary onboard ISP for High-Dynamic Camera Modules",
+        "e-con’s Proprietary onboard ISP for Hardware Agnostic Camera Module",
         "Carrier Board Design and Manufacturing",
       ],
       image: "../../images/multicamera/sports-isp.jpg",
@@ -85,15 +85,15 @@ const DesignedSports: React.FC = () => {
             {item.logos && (
               <div className="platform-logos">
                 <img
-                  src="../../images/multicamera/nvidia-logo.jpg"
+                  src="/images/multicamera/nvidia-logo.jpg"
                   alt="Nvidia"
                 />
                 <img
-                  src="../../images/multicamera/ambarella-logo.jpg"
+                  src="/images/multicamera/ambarella-logo.jpg"
                   alt="Ambarella"
                 />
                 <img
-                  src="../../images/multicamera/qualcomm-logo.jpg"
+                  src="/images/multicamera/qualcomm-logo.jpg"
                   alt="Qualcomm"
                 />
               </div>

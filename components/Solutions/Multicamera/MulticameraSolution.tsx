@@ -6,7 +6,7 @@ const MulticameraSolution: React.FC = () => {
   const sensors = [
     {
       name: "Sony IMX678",
-      image: "../../images/multicamera/imx678-sensor-camera.jpg",
+      image: "/images/multicamera/imx678-sensor-camera.jpg",
       title: "4K STARVIS™ 2 HDR Sensor",
       text1:
         "4K resolution optimized for sports streaming and analytics applications.",
@@ -17,7 +17,7 @@ const MulticameraSolution: React.FC = () => {
     },
     {
       name: "Sony IMX676",
-      image: "../../images/multicamera/imx676-sensor-camera.jpg",
+      image: "/images/multicamera/imx676-sensor-camera.jpg",
       title: "12MP Square STARVIS™ 2 HDR Sensor",
       text1:
         "Square sensor format enabling higher scene utilization compared to conventional rectangular sensors.",
@@ -28,7 +28,7 @@ const MulticameraSolution: React.FC = () => {
     },
     {
       name: "onsemi AR2020",
-      image: "../../images/multicamera/ar2020-sensor-camera.jpg",
+      image: "/images/multicamera/ar2020-sensor-camera.jpg",
       title: "20MP High-Resolution Sensor",
       text1:
         "20MP high resolution for broad field coverage and finer detail capture",
@@ -39,7 +39,7 @@ const MulticameraSolution: React.FC = () => {
     },
     {
       name: "IMX06A/IMX06C",
-      image: "../../images/multicamera/imx06-sensor-camera.jpg",
+      image: "/images/multicamera/imx06-sensor-camera.jpg",
       title: "50MP High Resolution Sensor",
       text1:
         "50MP ultra-high resolution enabling large-area sports coverage with fewer cameras.",

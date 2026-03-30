@@ -1,0 +1,132 @@
+.ctafooter {
+  background: linear-gradient(135deg, #0a1628 0%, #0d2240 50%, #0f2d55 100%);
+  padding: 40px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctafooter::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 30% 50%, rgba(30, 111, 255, 0.1), transparent),
+    radial-gradient(ellipse 50% 70% at 75% 40%, rgba(0, 160, 255, 0.07), transparent);
+  pointer-events: none;
+}
+
+.ctafooter__inner {
+  position: relative;
+  margin: 0 auto;
+}
+
+.ctafooter__icon {
+  width: 56px;
+  height: 56px;
+  background: rgba(30, 111, 255, 0.15);
+  border: 1px solid rgba(30, 111, 255, 0.3);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.ctafooter__icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: #5bb8ff;
+  fill: none;
+}
+
+.ctafooter__title {
+  font-family: 'Barlow', sans-serif;
+  font-size: clamp(24px, 3.5vw, 40px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  letter-spacing: -0.02em;
+}
+
+.ctafooter__title span {
+  color: #3fa9ff;
+}
+
+.ctafooter__sub {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+  margin: 0 0 36px;
+}
+
+.ctafooter__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #2e874a;
+  color: #fff;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow: 0 4px 20px rgba(30, 255, 124, 0.35);
+}
+
+.ctafooter__cta:hover {
+  background: #2fc55e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgb(30 255 58 / 45%);
+}
+
+.ctafooter__cta svg {
+  width: 18px;
+  height: 18px;
+}
+
+.ctafooter__divider {
+  width: 60px;
+  height: 2px;
+  background: rgba(30, 111, 255, 0.35);
+  margin: 40px auto 32px;
+  border-radius: 2px;
+}
+
+.ctafooter__trust {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.ctafooter__trust-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: 500;
+}
+
+.ctafooter__trust-item svg {
+  width: 16px;
+  height: 16px;
+  stroke: #5bb8ff;
+  fill: none;
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .ctafooter {
+    padding: 60px 20px;
+  }
+
+  .ctafooter__trust {
+    gap: 16px;
+  }
+}

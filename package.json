@@ -2,6 +2,7 @@
   "name": "e-con-sports-imaging-systems",
   "private": true,
   "version": "0.0.0",
+  "homepage": "/sports-boardcasting-analytics",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -5,7 +5,7 @@ import Modelbutton from './ButtonComp/Modelbutton';
 
 const solutionDropdown = [
   { label: 'Multi-Camera Solutions', href: '/multicamera' },
-  { label: 'Ethernet Cameras', href: '/ethernetcamera' },
+  { label: 'Ethernet Cameras', href: '/ethernet-camera' },
   { label: 'Global Shutter Cameras', href: '/golfswing' },
 ];
 

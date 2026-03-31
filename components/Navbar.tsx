@@ -1,11 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { NavItem } from '../types';
 import Modelbutton from './ButtonComp/Modelbutton';
+import footerLogo from '../public/images/footerlogo-1.svg';
 
 const solutionDropdown = [
   { label: 'Multi-Camera Solutions', href: '/multicamera' },
-  { label: 'Ethernet Cameras', href: '/ethernet-camera' },
+  { label: 'Ethernet Cameras', href: '/ethernetcamera' },
   { label: 'Global Shutter Cameras', href: '/golfswing' },
 ];
 
@@ -68,13 +70,13 @@ export const Navbar: React.FC = () => {
         <div className="d-flex justify-content-between align-items-center" style={{ height: '4rem' }}>
           {/* Logo */}
           <div className="d-flex align-items-center">
-            <a href="/">
+            <Link to="/">
               <img
-                src="/images/footerlogo-1.svg"
+                src={footerLogo}
                 alt="Company Logo"
                 className="navbar-logo"
               />
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Nav */}
@@ -122,13 +124,23 @@ export const Navbar: React.FC = () => {
                           onMouseLeave={handleSolutionsMouseLeave}
                         >
                           {solutionDropdown.map((dropItem) => (
-                            <a
-                              key={dropItem.label}
-                              href={dropItem.href}
-                              className="dropdown-item"
-                            >
-                              {dropItem.label}
-                            </a>
+                            dropItem.href.startsWith('/') ? (
+                              <Link
+                                key={dropItem.label}
+                                to={dropItem.href}
+                                className="dropdown-item"
+                              >
+                                {dropItem.label}
+                              </Link>
+                            ) : (
+                              <a
+                                key={dropItem.label}
+                                href={dropItem.href}
+                                className="dropdown-item"
+                              >
+                                {dropItem.label}
+                              </a>
+                            )
                           ))}
                         </div>
                       )}
@@ -152,13 +164,23 @@ export const Navbar: React.FC = () => {
                           onMouseLeave={handleResourcesMouseLeave}
                         >
                           {resourcesDropdown.map((dropItem) => (
-                            <a
-                              key={dropItem.label}
-                              href={dropItem.href}
-                              className="dropdown-item"
-                            >
-                              {dropItem.label}
-                            </a>
+                            dropItem.href.startsWith('/') ? (
+                              <Link
+                                key={dropItem.label}
+                                to={dropItem.href}
+                                className="dropdown-item"
+                              >
+                                {dropItem.label}
+                              </Link>
+                            ) : (
+                              <a
+                                key={dropItem.label}
+                                href={dropItem.href}
+                                className="dropdown-item"
+                              >
+                                {dropItem.label}
+                              </a>
+                            )
                           ))}
                         </div>
                       )}
@@ -204,13 +226,23 @@ export const Navbar: React.FC = () => {
                   <div className="fw-bold text-slate-700 mb-2">{item.label}</div>
                   <div className="ps-3 d-flex flex-column gap-2">
                     {solutionDropdown.map((dropItem) => (
-                      <a
-                        key={dropItem.label}
-                        href={dropItem.href}
-                        className="mobile-dropdown-item"
-                      >
-                        {dropItem.label}
-                      </a>
+                      dropItem.href.startsWith('/') ? (
+                        <Link
+                          key={dropItem.label}
+                          to={dropItem.href}
+                          className="mobile-dropdown-item"
+                        >
+                          {dropItem.label}
+                        </Link>
+                      ) : (
+                        <a
+                          key={dropItem.label}
+                          href={dropItem.href}
+                          className="mobile-dropdown-item"
+                        >
+                          {dropItem.label}
+                        </a>
+                      )
                     ))}
                   </div>
                 </>
@@ -219,13 +251,23 @@ export const Navbar: React.FC = () => {
                   <div className="fw-bold text-slate-700 mb-2">{item.label}</div>
                   <div className="ps-3 d-flex flex-column gap-2">
                     {resourcesDropdown.map((dropItem) => (
-                      <a
-                        key={dropItem.label}
-                        href={dropItem.href}
-                        className="mobile-dropdown-item"
-                      >
-                        {dropItem.label}
-                      </a>
+                      dropItem.href.startsWith('/') ? (
+                        <Link
+                          key={dropItem.label}
+                          to={dropItem.href}
+                          className="mobile-dropdown-item"
+                        >
+                          {dropItem.label}
+                        </Link>
+                      ) : (
+                        <a
+                          key={dropItem.label}
+                          href={dropItem.href}
+                          className="mobile-dropdown-item"
+                        >
+                          {dropItem.label}
+                        </a>
+                      )
                     ))}
                   </div>
                 </>

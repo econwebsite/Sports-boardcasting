@@ -370,6 +370,10 @@ body {
     .hero-subtitle {
         font-size: 1.25rem;
     }
+    .card{
+    display: flex;
+    flex-direction: column !important;
+}
 }
 
 .hero-camera-overlay {
@@ -548,7 +552,13 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-
+.card{
+    display: flex;
+    flex-direction: row !important;
+}
+.card .card-body a{
+    text-decoration: none;
+}
 /* --- CTA Box --- */
 .cta-box {
     position: relative;
@@ -673,4 +683,10 @@ a.text-primary:hover::after {
 
 .footer-custom a:hover {
     color: #fff;
+}
+@media (min-width: 768px) {
+    
+    .card{
+    flex-direction: column;
+}
 }

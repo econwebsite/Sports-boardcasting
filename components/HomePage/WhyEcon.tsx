@@ -1,5 +1,13 @@
 import React from "react";
 import "./WhyEconTimeline.css";
+import cameraIcon from '../../public/images/why-econ/camera.svg';
+import multiCameraIcon from '../../public/images/why-econ/multi-camera.svg';
+import broadcastGradeIcon from '../../public/images/why-econ/broadcast-grade.svg';
+import opticsIcon from '../../public/images/why-econ/optics.svg';
+import enclosureDesignIcon from '../../public/images/why-econ/enclosure-design.svg';
+import calibrationIcon from '../../public/images/why-econ/calibration.svg';
+import platformIcon from '../../public/images/why-econ/platform.svg';
+import factoryIcon from '../../public/images/why-econ/factory.svg';
 
 interface Feature {
   title: string;
@@ -9,42 +17,42 @@ interface Feature {
 const features: Feature[] = [
   {
     title: "Proven, field-tested camera modules and Ethernet cameras",
-    icon: "/images/why-econ/camera.svg",
+    icon: cameraIcon,
   },
   {
     title:
-      "Accurate multi-camera synchronization with 180° panoramic stitching support",
-    icon: "/images/why-econ/multi-camera.svg",
+      "Accurate multi-camera synchronization with 180 panoramic stitching support",
+    icon: multiCameraIcon,
   },
   {
     title:
       "Broadcast-grade image quality with ISP tuning flexibility.",
-    icon: "/images/why-econ/broadcast-grade.svg",
+    icon: broadcastGradeIcon,
   },
   {
     title:
       "Optics customization to meet sport-specific imaging requirements.",
-    icon: "/images/why-econ/optics.svg",
+    icon: opticsIcon,
   },
   {
     title:
       "Mechanical and enclosure design expertise for diverse deployment needs",
-    icon: "/images/why-econ/enclosure-design.svg",
+    icon: enclosureDesignIcon,
   },
   {
     title:
       "In-house active alignment and precision calibration capabilities",
-    icon: "/images/why-econ/calibration.svg",
+    icon: calibrationIcon,
   },
   {
     title:
       "Platform and carrier board development across NVIDIA, Qualcomm, and Ambarella",
-    icon: "/images/why-econ/platform.svg",
+    icon: platformIcon,
   },
   {
     title:
       "Strong manufacturing ecosystem supporting reliable volume production",
-    icon: "/images/why-econ/factory.svg",
+    icon: factoryIcon,
   },
 ];
 

@@ -1,10 +1,14 @@
 import React from "react";
 import "./multicameraBanner.css";
 import Modelbutton from "../../ButtonComp/Modelbutton";
+import multicameraBannerImg from '../../../public/images/multicamera/multicamera-banner.jpg';
 
 const MulticameraBanner: React.FC = () => {
   return (
-    <section className="multicamera-banner">
+    <section
+      className="multicamera-banner"
+      style={{ backgroundImage: `url(${multicameraBannerImg})` }}
+    >
       <div className="banner-overlay">
         <div className="banner-content">
 

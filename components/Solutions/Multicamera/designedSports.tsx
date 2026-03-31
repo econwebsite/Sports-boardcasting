@@ -1,5 +1,12 @@
 import React from "react";
 import "./designedSports.css";
+import sportsOpticsImg from '../../../public/images/multicamera/sports-optics.jpg';
+import sportsAlignmentImg from '../../../public/images/multicamera/sports-alignment.jpg';
+import sportsIspImg from '../../../public/images/multicamera/sports-isp.jpg';
+import sportsMechanicalImg from '../../../public/images/multicamera/sports-mechanical.jpg';
+import nvidiaLogo from '../../../public/images/multicamera/nvidia-logo.jpg';
+import ambarellaLogo from '../../../public/images/multicamera/ambarella-logo.jpg';
+import qualcommLogo from '../../../public/images/multicamera/qualcomm-logo.jpg';
 
 const DesignedSports: React.FC = () => {
   const sections = [
@@ -10,7 +17,7 @@ const DesignedSports: React.FC = () => {
         "Application-Specific FOV Engineering",
         "High MTF and Centre to Corner Sharpness Validation",
       ],
-      image: "../../images/multicamera/sports-optics.jpg",
+      image: sportsOpticsImg,
       reverse: false,
     },
     {
@@ -29,17 +36,17 @@ const DesignedSports: React.FC = () => {
           desc: "Improves stitching accuracy and spatial alignment between cameras.",
         },
       ],
-      image: "../../images/multicamera/sports-alignment.jpg",
+      image: sportsAlignmentImg,
       reverse: true,
     },
     {
       title: "ISP & Platform Expertise",
       bullets: [
         "Processor-Aligned ISP Tuning",
-        "e-con’s Proprietary onboard ISP for Hardware Agnostic Camera Module",
+        "e-con's Proprietary onboard ISP for Hardware Agnostic Camera Module",
         "Carrier Board Design and Manufacturing",
       ],
-      image: "../../images/multicamera/sports-isp.jpg",
+      image: sportsIspImg,
       reverse: false,
       logos: true,
     },
@@ -52,7 +59,7 @@ const DesignedSports: React.FC = () => {
         "Enclosure Design and Scalable Manufacturing",
         "Battery and Power Integration Support",
       ],
-      image: "../../images/multicamera/sports-mechanical.jpg",
+      image: sportsMechanicalImg,
       reverse: true,
     },
   ];
@@ -85,15 +92,15 @@ const DesignedSports: React.FC = () => {
             {item.logos && (
               <div className="platform-logos">
                 <img
-                  src="/images/multicamera/nvidia-logo.jpg"
+                  src={nvidiaLogo}
                   alt="Nvidia"
                 />
                 <img
-                  src="/images/multicamera/ambarella-logo.jpg"
+                  src={ambarellaLogo}
                   alt="Ambarella"
                 />
                 <img
-                  src="/images/multicamera/qualcomm-logo.jpg"
+                  src={qualcommLogo}
                   alt="Qualcomm"
                 />
               </div>

@@ -1,23 +1,27 @@
 
 import React from 'react';
 import { Application } from '../../types';
+import automatedSoccerImg from '../../public/images/appilications/automated-soccer-streaming.jpg';
+import trainingAnalysisImg from '../../public/images/appilications/training-performance-analysis.jpg';
+import fixedCompactImg from '../../public/images/appilications/fixed-compact-deployment.jpg';
+import globalShutterImg from '../../public/images/solution/global-shutter-cameras.jpg';
 
 const apps: Application[] = [
   {
     title: 'Automated Soccer Match Streaming',
-    image: '/images/appilications/automated-soccer-streaming.jpg'
+    image: automatedSoccerImg
   },
   {
     title: 'Training and Performance Analysis',
-    image: '/images/appilications/training-performance-analysis.jpg'
+    image: trainingAnalysisImg
   },
   {
     title: 'Fixed Compact deployment for racquet sports',
-    image: '/images/appilications/fixed-compact-deployment.jpg'
+    image: fixedCompactImg
   },
   {
     title: 'Automated PTZ for Rugby and Baseball',
-    image: '/images/solution/global-shutter-cameras.jpg'
+    image: globalShutterImg
   }
 ];
 

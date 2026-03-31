@@ -1,13 +1,14 @@
 
 import React from 'react';
 import Modelbutton from '../ButtonComp/Modelbutton';
+import heroBanner from '../../public/images/sports-boardcasting-banner-en.jpg';
 const Hero = () => {
   return (
     <div className="hero-section">
       {/* Background Image */}
       <div
         className="hero-bg"
-        style={{ backgroundImage: `url('/images/sports-boardcasting-banner-en.jpg')` }}
+        style={{ backgroundImage: `url(${heroBanner})` }}
       >
         <div className="hero-overlay" />
       </div>

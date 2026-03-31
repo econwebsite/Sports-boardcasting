@@ -1,25 +1,29 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { SolutionCard } from '../../types';
+import multiCameraImg from '../../public/images/solution/multi-camera-sports-imaging.jpg';
+import deploymentImg from '../../public/images/solution/deployment-ready-ethernet-cameras.jpg';
+import globalShutterImg from '../../public/images/appilications/automated-ptz-rugby-baseball.jpg';
 
 const solutions: SolutionCard[] = [
   {
     title: 'Build Your Own Multi-Camera Sports Imaging Solution',
     description: 'Explore camera modules and hardware platforms to configure a complete automated sports imaging solution.',
-    image: '/images/solution/multi-camera-sports-imaging.jpg',
+    image: multiCameraImg,
     link: '/multicamera'
   },
   {
     title: 'Deployment-Ready Ethernet Cameras',
     description: 'PoE cameras for reliable, fixed sports capture installations.',
-    image: '/images/solution/deployment-ready-ethernet-cameras.jpg',
+    image: deploymentImg,
     link: '#'
   },
   {
     title: 'Global Shutter Cameras for High-Speed Motion Capture',
     description: 'Our high-speed cameras empower golf swing capture systems and other simulators with reliable imaging.',
-    image: '/images/appilications/automated-ptz-rugby-baseball.jpg',
+    image: globalShutterImg,
     link: '/golfswing'
   }
 ];
@@ -47,13 +51,23 @@ export const Solutions: React.FC = () => {
                   <p className="text-slate-600 mb-4 small leading-relaxed">
                     {item.description}
                   </p>
-                  <a
-                    href={item.link}
-                    className="solution-link"
-                  >
-                    <ArrowRight className="me-2" size={16} />
-                    View solution
-                  </a>
+                  {item.link.startsWith('/') ? (
+                    <Link
+                      to={item.link}
+                      className="solution-link"
+                    >
+                      <ArrowRight className="me-2" size={16} />
+                      View solution
+                    </Link>
+                  ) : (
+                    <a
+                      href={item.link}
+                      className="solution-link"
+                    >
+                      <ArrowRight className="me-2" size={16} />
+                      View solution
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

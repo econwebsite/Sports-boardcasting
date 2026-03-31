@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
+import footerLogo from '../public/images/footerlogo-1.svg';
 
 export const Footer: React.FC = () => {
   return (
@@ -7,13 +9,13 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-3 px-sm-3 px-lg-4">
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
           <div>
-            <a href="/">
+            <Link to="/">
               <img
-                src="/images/footerlogo-1.svg"
+                src={footerLogo}
                 alt="Company Logo"
                 className="navbar-logo footer-logofilter"
               />
-            </a>
+            </Link>
             <p className="mt-2 small max-w-xs">
               World leader in camera modules and embedded vision solutions.
             </p>

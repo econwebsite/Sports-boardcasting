@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Banner from './Banner';
 import BigImageWithCategories from './BigImageWithCategories';
 import Resources from './Resources';
-import './golfSwing.css';
+import './GolfSwing.css';
 
 const GolfSwing: React.FC = () => {
   // Animation on scroll using Intersection Observer

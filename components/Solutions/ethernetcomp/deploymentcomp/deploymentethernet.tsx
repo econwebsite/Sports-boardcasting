@@ -1,4 +1,4 @@
-import './deploymentethernet.css';
+import './Deploymentethernet.css';
 
 const sports = [
   {

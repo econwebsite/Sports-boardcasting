@@ -15,7 +15,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <BrowserRouter basename="/sports-broadcasting-analytics"> 
-
+    {/* // url updated */}
       <ScrollToTop />
       <div className='fixed-container'>
         <div className="d-flex flex-column min-vh-100 overflow-x-hidden">
